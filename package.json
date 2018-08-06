@@ -1,0 +1,35 @@
+{
+  "name": "@folio/plugin-password-strength",
+  "version": "0.1.0",
+  "description": "UI plugin to show password strenth indicator.",
+  "main": "src/index.js",
+  "repository": "",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "stripes serve",
+    "build": "stripes build --output ./output",
+    "test": "stripes test nightmare --run demo --show",
+    "lint": "eslint src --fix"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.8.0",
+    "@folio/eslint-config-stripes": "^1.1.0"
+  },
+  "dependencies": {
+    "@folio/stripes-components": "^3.0.0",
+    "prop-types": "^15.6.0",
+    "tai-password-strength": "^1.1.1"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "stripes": {
+    "type": "plugin",
+    "pluginType": "password-strength",
+    "displayName": "ui-plugin-password-strength"
+  }
+}
