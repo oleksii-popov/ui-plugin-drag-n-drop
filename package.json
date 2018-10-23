@@ -1,0 +1,34 @@
+{
+  "name": "@folio/ui-plugin-drag-n-drop",
+  "version": "0.1.0",
+  "description": "UI plugin for drag and drop functionality.",
+  "main": "src/index.js",
+  "repository": "",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "stripes serve",
+    "build": "stripes build --output ./output",
+    "lint": "eslint src --fix"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.8.0",
+    "@folio/eslint-config-stripes": "^1.1.0"
+  },
+  "dependencies": {
+    "@folio/stripes-components": "^3.0.0",
+    "prop-types": "^15.6.0",
+    "react-dropzone": "^6.2.4"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "stripes": {
+    "type": "plugin",
+    "pluginType": "drag-n-drop",
+    "displayName": "ui-plugin-drag-n-drop"
+  }
+}
