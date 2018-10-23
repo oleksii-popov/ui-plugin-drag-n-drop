@@ -1,4 +1,4 @@
-# Change history for ui-plugin-password-strength
+# Change history for ui-plugin-drag-n-drop
 
 ## 0.1.0 (IN PROGRESS)
 

@@ -1,4 +1,4 @@
 import React from 'react';
-import PasswordStrength from './src';
+import DragNDrop from './src';
 
-export default props => <PasswordStrength {...props} />;
+export default props => <DragNDrop {...props} />;

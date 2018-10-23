@@ -1,4 +1,4 @@
-# ui-plugin-password-strength
+# ui-plugin-drag-n-drop
 
 Copyright (C) 2017-2018 The Open Library Foundation
 
@@ -7,32 +7,7 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 ## Introduction
 
-It is POC for password strength stipes plugin. It requies additional styling, 
-tests and configuration in order to be completed.
-Plugin uses [https://github.com/tests-always-included/password-strength](https://github.com/tests-always-included/password-strength)
-library.
-
-## Usage
-
-Include plugin via 
-`<Pluggable type="password-strength" dataSource={data}></Pluggable>`.
-
-You will need to include 
-`import Pluggable from '@folio/stripes-components/lib/Pluggable';` into your code.
-
-The following code shows how to pass value to plugin.
-```javascript
-import { formValues } from 'redux-form';
-
-getCurrentValues(key) {
-        const {stripes: {store}} = this.props;
-        const state = store.getState();
-        const values = getFormValues('Form')(state) || {};
-        return values[key] || false;
-}
-
-<Pluggable type="password-strength" dataSource={this.getCurrentValues("InputName")}></Pluggable>
-```
+Stripes plugin for drag&drop functionality.
 
 ## Plugins reference
 [The *Plugins*
